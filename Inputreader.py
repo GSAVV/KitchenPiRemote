@@ -10,12 +10,13 @@ Enc_P = 12
 But_B = 17
 
 #define buttons to be pressed
-r = 'key Right'
-l = 'key Left'
+r = 'key Down' 		#changed right/left to up/down because of new list format
+l = 'key Up' 		#changed right/left to up/down because of new list format
 e = 'key Return'
 u = 'key Up'
 d = 'key Down'
 back = 'key BackSpace'
+c = 'key c'
 
 #initialize pdf status
 pdf_status = False    
@@ -54,6 +55,7 @@ def keymapping(key):
 		for x in range(0, 14):
 			keypress(d)
 			x += 1
+		keypress(c)
 	elif (key == "r" and not pdf_status):
 		keypress(r)
 	elif (key == "l" and pdf_status):
