@@ -23,6 +23,7 @@ in this file
 ## Configure xpdf
 add the following lines
 ```
+bind c any closeOutline
 initialZoom width
 continuousView yes
 ```
